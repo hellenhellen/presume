@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
+</head>
+<body>
+<div class="swiper-container" id="container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+            <img src='images/qiqiu.png'>
+            <img src="images/111.png"><!--
+            <img src="images/jisi.png">-->
+            <div><img src="images/keji.png" ><span></span></div>
+            <img src="images/person_bg.png">
+            <img src="images/name1.png">
+            <p class="jianli"></p>
+        </div>
+        <div class="swiper-slide slide2">
+            <img src="images/faguang.png" >
+            <p class='list'>基本信息</p><!--
+            <img src="images/2-2.png">-->
+            <div class="div_list">
+                <span></span>
+                <span><img src="images/list.png" alt=""></span>
+            </div>
+            <p>姓名：王晓宁</p>
+            <p>性别：女</p>
+            <p>学历：本科</p>
+            <p>专业：数字媒体技术</p>
+            <p>毕业院校：长春工业大学</p>
+            <img src="images/totop.png">
+        </div>
+        <div class="swiper-slide slide3">
+            <p class='list'>掌握技能</p>
+            <div class="top">
+                <img src="images/content.png">
+                <span>Node.js</span>
+                <span>Vue</span>
+                <span>H5</span>
+            </div>
+            <img src="images/fangkuai.png">
+            <span>熟悉JavaScript</span>
+            <span>熟练使用Node.js</span>
+            <span>熟悉前后台数据交互</span>
+            <span>操作mongodb数据库</span>
+            <span>掌握前端框架Angular.js</span>
+            <span>熟悉ps、HTML、CSS布局</span>
+            <span>使用html5开发webapp及响应式开发</span>
+            <!--
+            <span>掌握前端框架Angular.js、React、Vue</span>
+            <span>熟练使用Node.js，操作mongodb数据库</span>
+            <span>使用html5开发webapp及响应式开发</span>
+            <span>了解数据的原生</span>-->
+        </div>
+        <div class="swiper-slide slide4">
+            <p class='list'>工作经验</p>
+            <img src="images/fly.png">
+            <div class="job">
+                <p class='animated tada'>微客兄弟（北京）有限公司</p>
+                <p class='animated bounceInDown'>职位：前端工程师</p>
+                <p>时间：2015年7月至2017年1月</p>
+                <p>职责：主要负责网站前端功能的实现</p>
+            </div>
+        </div>
+        <div class="swiper-slide slide5">
+            <p class='list'>关于我</p>
+            <p>联系方式：18612358425</p>
+            <p>我的邮箱：664776560@qq.com</p>
+            <img src="images/qq_pic_merged_1484711743665.jpg">
+        </div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper=new Swiper('.swiper-container',{
+        direction:'vertical',
+        onTransitionEnd:function(swiper){
+            var curIndex=swiper.activeIndex;
+            var sliders=swiper.slides;
+            [].forEach.call(sliders,function (item,index) {
+                item.id="";
+                if(curIndex==index){
+                    switch(curIndex){
+                        case 0:
+                            item.id="page"+(sliders.length-2);
+                            break;
+                        case sliders.length-1:
+                            item.id="page1";
+                            break;
+                        default:
+                            item.id="page"+curIndex;
+                    }
+                }
+            })
+        },
+        loop:true
+    })
+</script>
+<script>
+    var desW=640;
+    var winP=document.documentElement.clientWidth||document.body.clientWidth;
+    document.documentElement.style.fontSize=winP/desW*100+'px';
+    if(winP>640){
+        var width=document.getElementById("container");
+        width.style.width="640px";
+        document.documentElement.style.fontSize="100px"
+    }
+</script>
+</body>
+</html>
