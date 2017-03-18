@@ -6,11 +6,11 @@ html,body{width:100%;height:100%;overflow:hidden;}
 .slide1>img,.slide1 img,.slide1 span,.slide1 p,.slide1 div{opacity:0;}
 .slide1 img:nth-child(1){width:2rem;bottom:1.9rem;left:-.2rem;transform: rotate(15deg);}
 .slide1>img:nth-child(2){width:1rem;height:1rem;bottom:1.3rem;right:.5rem;animation: change 1s infinite both;-webkit-animation: change 1s infinite both;transition:1s;}
-.photo{width:4rem;height:1rem;background:url('../images/jisi.png') no-repeat center center;background-size:100%;display: block;border-radius: 0.7rem 0.4rem ;background-clip: content-box;right:.1rem;top:2rem;}
+/*.photo{width:4rem;height:1rem;background:url('../images/jisi.png') no-repeat center center;background-size:100%;display: block;border-radius: 0.7rem 0.4rem ;background-clip: content-box;right:.1rem;top:2rem;}*/
 .slide1 div{position:absolute;right:2.4rem;}
 .slide1 div img:nth-child(1){width:2.4rem;top:2rem;animation: circle 2s linear infinite both;-webkit-animation: circle 2s linear infinite both;}
 .slide1 div span{width:1.86rem;height:1.86rem;
-    border-radius:50%;left:.078rem;top:2.284rem;background:url("../images/perpic.jpg") no-repeat 50% 0 #01b2ff;background-size:contain;}
+    border-radius:50%;left:.078rem;top:2.284rem;background:url("../images/perpic.jpg") no-repeat 50% 0 #01a4ff;background-size:contain;}
 .slide1 img:nth-child(4){left:-.51rem;top:50%;margin-top:-4.7rem;width:4.7rem;}
 .slide1 img:nth-child(5){right:.45rem;bottom:1.5rem;width:2.8rem;}
 #page1 img,#page1 div,#page1 span,#page2 img,#page2 div,#page2 span,#page2 p{opacity:1;}
@@ -133,7 +133,7 @@ html,body{width:100%;height:100%;overflow:hidden;}
 .slide5 p:nth-child(3){
     top:3.1rem;text-align:center;width:100%;font-size:0.3rem;
 }
-.slide5 img:nth-child(4){width:3.5rem;left:50%;margin-left:-1.75rem;top:4.6rem;}
+.slide5 img:nth-child(4){width:3.5rem;left:50%;margin-left:-1.75rem;bottom:2.3rem;}
 #page5 p,#page5 img{opacity:1;}
 #page5 p:nth-child(2){
     animation:1s flipInY 1 both;
